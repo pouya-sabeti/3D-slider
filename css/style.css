@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'iransans';
+    src: url(../font/IRANSansWeb.ttf);
+}
 *{
     margin: 0 auto;
     padding: 0;
@@ -6,55 +10,72 @@
 body{
     background: #191919;
     position: relative;
+    font-family: 'iransans';
 }
-.color-red{
-    background: rgba(255, 0, 0, 0.9) !important;
-    /* transform: translateX(450px) rotateY(60deg) rotateX(-20deg) */
+.tr-1{
     transform:
     translateX(450px);
-
+    z-index: 1000;
 }
-.color p{
-    color: black !important;
-}
-.color{
-  
-    transform: scale(.55) translateX(815px);
-    z-index: -1;
-}
-.color-green{
-    background: rgba(21, 255, 0, 0.9) !important;
-    transform: scale(.6) translateX(1178px) perspective(75em) rotateY(
-        -47deg);
-
-    z-index: -1;
-}
-.color-puple{
-    background: rgba(143, 0, 187, 0.9) !important;
-    transform: scale(.6) translateX(323px) perspective(75em) rotateY( 
-        47deg);
-
-    z-index: -1;
-}
-.color-blue{
-    background: rgba(3, 78, 177, 0.9) !important;
+.tr-2{
     transform:
     scale(.8)
     translateX(950px)
     perspective(75em)
     rotateY(70deg);
+    z-index: 1000;
+}
+.tr-3{
+    transform: scale(.6) translateX(1178px) perspective(75em) rotateY(
+        131deg);
+
+    z-index: -1;
+}
+.tr-4{
+    transform: scale(.55) translateX(815px) perspective(75em) rotateY(180deg);
+    z-index: -1;
+}
+.tr-5{
+    transform: scale(.6) translateX(323px) perspective(75em) rotateY( 
+        228deg);
+
+    z-index: -1;
+}
+.tr-6{
+    transform: scale(.8) translateX(173px) perspective(75em) rotateY(
+        291deg);
+        z-index: 1000;
+}
+.color-red{
+    background: rgba(255, 0, 0, 0.9) !important;
+    /* transform: translateX(450px) rotateY(60deg) rotateX(-20deg) */
+  
+
+}
+
+
+.color-green{
+    background: rgba(21, 255, 0, 0.9) !important;
+ 
+}
+.color-puple{
+    background: rgba(143, 0, 187, 0.9) !important;
+
+}
+.color-blue{
+    background: rgba(3, 78, 177, 0.9) !important;
+  
     
 }
 .color-5{
     background: rgba(117, 47, 0, 0.9) !important;
-    transform: scale(.8) translateX(173px) perspective(75em) rotateY(
-        -70deg);
+ 
 }
 .slider{
    
     margin-top: 150px;
 
-
+margin-left: 29px;
     height: 300px;
 }
 .slider div{
@@ -65,10 +86,45 @@ body{
 display: inline-block;
 margin: 10px;
 border-radius: 15px;
+transition: all .5s cubic-bezier(0.355, 0.885, 0.32, 1.275)
 }
-.slider div p{
-    font-size: 85px;
+.slider div img{
+   width: 95%;
+   border-radius: 15px;
+   margin: 45px 11px;
+}
+.alt-right{
+    top: 100px;
+    right:215px;
+    position: absolute;
+}
+.alt-left{
+    top: 100px;
+    left:235px;
+    position: absolute;
+}
+.alt-left p{
     color: #fff;
-    font-family: tahoma;
-    margin: 90px 174px;
+font-weight: 300;
+}
+.alt-right p{
+    color: #fff;
+font-weight: 300;
+}
+.alt-right i{
+  
+    font-size: 80px;
+    color: #fff;
+}
+.alt-left i{
+    
+    font-size: 80px;
+    color: #fff;
+}
+.pouya{
+    position: fixed;
+  bottom: 20px;
+width: 100%;
+text-align: center;
+color: #fff;
 }
