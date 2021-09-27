@@ -5,4 +5,70 @@
 }
 body{
     background: #191919;
+    position: relative;
+}
+.color-red{
+    background: rgba(255, 0, 0, 0.9) !important;
+    /* transform: translateX(450px) rotateY(60deg) rotateX(-20deg) */
+    transform:
+    translateX(450px);
+
+}
+.color p{
+    color: black !important;
+}
+.color{
+  
+    transform: scale(.55) translateX(815px);
+    z-index: -1;
+}
+.color-green{
+    background: rgba(21, 255, 0, 0.9) !important;
+    transform: scale(.6) translateX(1178px) perspective(75em) rotateY(
+        -47deg);
+
+    z-index: -1;
+}
+.color-puple{
+    background: rgba(143, 0, 187, 0.9) !important;
+    transform: scale(.6) translateX(323px) perspective(75em) rotateY( 
+        47deg);
+
+    z-index: -1;
+}
+.color-blue{
+    background: rgba(3, 78, 177, 0.9) !important;
+    transform:
+    scale(.8)
+    translateX(950px)
+    perspective(75em)
+    rotateY(70deg);
+    
+}
+.color-5{
+    background: rgba(117, 47, 0, 0.9) !important;
+    transform: scale(.8) translateX(173px) perspective(75em) rotateY(
+        -70deg);
+}
+.slider{
+   
+    margin-top: 150px;
+
+
+    height: 300px;
+}
+.slider div{
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    background: rgba(255, 255, 255, .9);
+display: inline-block;
+margin: 10px;
+border-radius: 15px;
+}
+.slider div p{
+    font-size: 85px;
+    color: #fff;
+    font-family: tahoma;
+    margin: 90px 174px;
 }
