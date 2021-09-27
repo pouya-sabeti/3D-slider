@@ -128,3 +128,14 @@ width: 100%;
 text-align: center;
 color: #fff;
 }
+@media (max-width:770px){
+    .alt-left{
+        display: none;
+    }
+    .alt-right{
+        display: none;
+    }
+    .slider{
+        transform: translateX(-250px) scale(.5);
+    }
+}

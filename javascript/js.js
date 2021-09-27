@@ -1,3 +1,5 @@
+
+   
 var a = document.getElementById("a");
 var b = document.getElementById("b");
 var c = document.getElementById("c");
@@ -20,6 +22,7 @@ f.classList.remove("tr-5");
 f.classList.add("tr-6");
     }
     else{
+        if(a.classList[1] == "tr-2"){
         a.classList.remove("tr-2");
     a.classList.add("tr-1");
 b.classList.remove("tr-3");
@@ -32,6 +35,7 @@ e.classList.remove("tr-6");
 e.classList.add("tr-5");
 f.classList.remove("tr-1");
 f.classList.add("tr-6");
+        }
     }
 }
 function click_b(){
@@ -50,6 +54,7 @@ f.classList.remove("tr-6");
 f.classList.add("tr-5");
     }
     else{
+        if(b.classList[1] == "tr-6"){
         a.classList.remove("tr-5");
         a.classList.add("tr-6");
     b.classList.remove("tr-6");
@@ -62,6 +67,7 @@ f.classList.add("tr-5");
     e.classList.add("tr-4");
     f.classList.remove("tr-4");
     f.classList.add("tr-5");
+        }
     }
 }
 function click_c(){
@@ -79,6 +85,7 @@ e.classList.add("tr-3");
 f.classList.remove("tr-5");
 f.classList.add("tr-4");
     }else{
+        if(c.classList[1] == "tr-6"){
         a.classList.remove("tr-4");
         a.classList.add("tr-5");
     b.classList.remove("tr-5");
@@ -91,6 +98,7 @@ f.classList.add("tr-4");
     e.classList.add("tr-3");
     f.classList.remove("tr-3");
     f.classList.add("tr-4");
+        }
     }
 }
 function click_d(){
@@ -109,6 +117,7 @@ f.classList.remove("tr-4");
 f.classList.add("tr-3");
     }
     else{
+        if(d.classList[1] == "tr-6"){
         a.classList.remove("tr-3");
         a.classList.add("tr-4");
     b.classList.remove("tr-4");
@@ -121,6 +130,7 @@ f.classList.add("tr-3");
     e.classList.add("tr-2");
     f.classList.remove("tr-2");
     f.classList.add("tr-3");
+        }
     }
 }
 function click_e(){
@@ -139,6 +149,7 @@ f.classList.remove("tr-3");
 f.classList.add("tr-2");
     }
     else{
+        if(e.classList[1] == "tr-6"){
         a.classList.remove("tr-2");
         a.classList.add("tr-3");
     b.classList.remove("tr-3");
@@ -151,6 +162,7 @@ f.classList.add("tr-2");
     e.classList.add("tr-1");
     f.classList.remove("tr-1");
     f.classList.add("tr-2");   
+        }
     }
 }
 function click_f(){
@@ -169,6 +181,7 @@ f.classList.remove("tr-2");
 f.classList.add("tr-1");
     }
     else{
+        if(f.classList[1] == "tr-6"){
         a.classList.remove("tr-1");
         a.classList.add("tr-2");
     b.classList.remove("tr-2");
@@ -181,5 +194,6 @@ f.classList.add("tr-1");
     e.classList.add("tr-6");
     f.classList.remove("tr-6");
     f.classList.add("tr-1");
+        }
     }
 }
