@@ -95,7 +95,7 @@ transition: all .5s cubic-bezier(0.355, 0.885, 0.32, 1.275)
 }
 .alt-right{
     top: 100px;
-    right:215px;
+    left:1075px;
     position: absolute;
 }
 .alt-left{
@@ -127,6 +127,17 @@ font-weight: 300;
 width: 100%;
 text-align: center;
 color: #fff;
+}
+@media (max-width:1150px){
+    .alt-left{
+        display: none;
+    }
+    .alt-right{
+        display: none;
+    }
+    .slider{
+        transform: translateX(-240px) ;
+    }
 }
 @media (max-width:770px){
     .alt-left{
